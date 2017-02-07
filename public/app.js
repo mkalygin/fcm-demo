@@ -11,6 +11,7 @@ firebase.initializeApp(config);
 
 const messaging = firebase.messaging();
 
+// Request permission for push notifications.
 messaging.requestPermission()
   .then(() => {
     log('Have permission to send push notifications');
@@ -22,6 +23,11 @@ messaging.requestPermission()
   .catch(err => {
     log(err);
   });
+
+// Handle incoming messages.
+messaging.onMessage(payload => {
+  log(`onMessage: ${JSON.stringify(payload)}`);
+});
 
 // Handlers for buttons.
 function onOnSiteNotificationClick() {
