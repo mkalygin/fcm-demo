@@ -1,6 +1,8 @@
 'use strict';
 
-const path   = require('path');
+const path      = require('path');
+const { sleep } = require('sleep');
+
 const config = require('./config');
 const Koa    = require('koa');
 const Router = require('koa-router');
@@ -12,8 +14,9 @@ const app = new Router();
 koa.use(serve(path.join(__dirname, 'public')))
 
 app.get('/push', async (ctx) => {
-  const secs = ctx.query.sleep || 0;
-  ctx.body = `push ${secs}`;
+  const secs = +ctx.query.sleep || 0;
+  sleep(secs);
+  ctx.status = 200;
 });
 
 koa.use(app.routes());
