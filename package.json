@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "koa": "next",
-    "koa-static": "^2.1.0"
+    "koa-router": "next",
+    "koa-static": "^2.1.0",
+    "sleep": "^5.1.0"
   }
 }
