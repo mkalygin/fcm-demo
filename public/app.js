@@ -9,10 +9,18 @@ var config = {
 
 firebase.initializeApp(config);
 
+const messaging = firebase.messaging();
+
 function onOnSiteNotificationClick() {
-  alert('on-site');
+  log('on-site');
 }
 
 function onOffSiteNotificationClick() {
-  alert('off-site');
+  log('off-site');
+}
+
+// Simple logging to page element.
+const $log = document.getElementById('log');
+function log(message) {
+  $log.innerHTML += `<br/>${message}`;
 }
