@@ -2,8 +2,12 @@
 <html>
 <head>
   <title>Web push notifications demo using Firebase Cloud Messaging</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js"></script>
 </head>
 <body>
-  Hello!
+  <button onclick='onOnSiteNotificationClick()'>Send on-site notification</button>
+  <button onclick='onOffSiteNotificationClick()'>Send off-site notification</button>
 </body>
 </html>
