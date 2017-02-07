@@ -43,7 +43,7 @@ function onOffSiteNotificationClick() {
   log('Sending off-site push notification...');
   log('The page will be redirected for demo purposes');
   setTimeout(() => {
-    fetch(`/push?token=${fcmToken}&sleep=5`);
+    fetch(`/push?token=${fcmToken}&sleep=2`);
     window.location = 'http://google.com';
   }, 3000);
 }
