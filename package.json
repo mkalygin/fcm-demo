@@ -1,0 +1,9 @@
+{
+  "name": "fcm-demo",
+  "version": "1.0.0",
+  "description": "Web push notifications demo using Firebase Cloud Messaging",
+  "main": "server.js",
+  "repository": "git@github.com:mkalygin/fcm-demo.git",
+  "author": "Michael Kalygin <michael.kalygin@gmail.com>",
+  "license": "MIT"
+}
