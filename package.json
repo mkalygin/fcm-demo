@@ -12,6 +12,6 @@
   "dependencies": {
     "koa": "next",
     "koa-router": "next",
-    "koa-static": "next"
+    "koa-send": "^3.3.0"
   }
 }
