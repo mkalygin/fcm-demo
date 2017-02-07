@@ -11,6 +11,19 @@ firebase.initializeApp(config);
 
 const messaging = firebase.messaging();
 
+messaging.requestPermission()
+  .then(() => {
+    log('Have permission to send push notifications');
+    return messaging.getToken();
+  })
+  .then(token => {
+    log(`Received FCM token: ${token}`);
+  })
+  .catch(err => {
+    log(err);
+  });
+
+// Handlers for buttons.
 function onOnSiteNotificationClick() {
   log('on-site');
 }
