@@ -2,14 +2,24 @@
 <html>
 <head>
   <title>Web push notifications demo using Firebase Cloud Messaging</title>
-  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/app.css">
+  <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-  <button onclick='onOnSiteNotificationClick()'>Send on-site notification</button>
-  <button onclick='onOffSiteNotificationClick()'>Send off-site notification</button>
-  <div id="log"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <button onclick='onOnSiteNotificationClick()'>Send on-site notification</button>
+      <button onclick='onOffSiteNotificationClick()'>Send off-site notification</button>
+    </div>
+    <div class="row">
+      <div id="log"></div>
+    </div>
+  </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
   <script src="/app.js"></script>
 </body>
