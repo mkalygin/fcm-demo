@@ -5,5 +5,13 @@
   "main": "server.js",
   "repository": "git@github.com:mkalygin/fcm-demo.git",
   "author": "Michael Kalygin <michael.kalygin@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node --harmony-async-await server.js"
+  },
+  "dependencies": {
+    "koa": "next",
+    "koa-router": "next",
+    "koa-static": "next"
+  }
 }
