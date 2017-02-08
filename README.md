@@ -1,5 +1,7 @@
 # fcm-demo
-Web push notifications demo using Firebase Cloud Messaging
+Web push notifications demo using Firebase Cloud Messaging.
+
+### [DEMO](https://fcm-demo-mtbqzgkaoz.now.sh/)
 
 ### How to run
 
