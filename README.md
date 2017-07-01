@@ -9,7 +9,7 @@ Web push notifications demo using Firebase Cloud Messaging.
 2. Install dependencies and setup environment variables:
 
   ```shell
-  $ yarn install
+  $ npm install -g yarnpkg
   $ echo FCM_SERVER_KEY=*your Firebase project server key* > .env
   $ yarn start
   ```
