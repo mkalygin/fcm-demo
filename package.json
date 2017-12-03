@@ -7,7 +7,7 @@
   "author": "Michael Kalygin <michael.kalygin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node --harmony-async-await server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
